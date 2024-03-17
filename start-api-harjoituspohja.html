@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Vite App</title>
+  </head>
+  <body>
+    <ul>
+      <li><p>Chilldiary</p></li>
+      <li><a href="about.html">About</a></li>
+      <li style="float: right" class="active logout"><a href="">Logout</a></li>
+    </ul>
+
+    <!-- <div id="app"></div> -->
+
+    <div class="user">
+      Hello <span id="name">NIMI TÄHÄN</span>!<br />
+      Welcome to the health diary, Chilldiary! Wellness begins with small
+      actions, and you've taken the first step towards a healthier life by
+      registering for this diary. Here, you can track your progress, record your
+      daily entries, monitor changes in your weight, track your sleep patterns
+      and mood, and find inspiration to improve your health. Remember, every day
+      is an opportunity to make good choices, and we're here to support you on
+      your journey towards better well-being.
+    </div>
+
+    <div class="forms">
+      <div style="flex: 1">
+        <h3>Diary</h3>
+
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Entry Date</th>
+              <th>Mood</th>
+              <th>Sleep Hours</th>
+              <th>Notes</th>
+              <th>Delete</th>
+              <th>Entry ID</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <!-- tänne haetaan kaikki käyttäjät -->
+            <!-- # Get all users -->
+            <!-- GET http://127.0.0.1:3000/api/users -->
+          </tbody>
+        </table>
+
+        <button class="get_users">Get diaryentries</button>
+      </div>
+      <div style="flex: 1">
+        <h3>Add new Diaryentry</h3>
+
+        <form class="addform">
+          <!-- Entry Form -->
+          <label for="entry_date">Entry Date:</label>
+          <input type="date" id="entry_date" name="entry_date" required /><br />
+
+          <label for="mood">Mood:</label>
+          <select id="mood" name="mood" required>
+            <option value="">Select</option>
+            <option value="Happy">Happy</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Sad">Sad</option></select
+          ><br />
+
+          <label for="weight">Weight:</label>
+          <input type="number" id="weight" name="weight" min="30" max="200" required /><br />
+
+          <label for="sleep_hours">Sleep Hours:</label>
+          <input
+            type="number"
+            id="sleep_hours"
+            name="sleep_hours"
+            required
+          /><br />
+
+          <label for="notes">Notes:</label>
+          <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Write about your day, exercises or anything you like"></textarea><br />
+
+          <input
+            name="submit"
+            type="submit"
+            value="Save entry"
+            class="creatediary"
+          />
+        </form>
+      </div>
+    </div>
+    <dialog id="notesDialog" class="notes-dialog">
+      <div class="rivitys">
+        <p id="dialogText"></p>
+      </div>
+      <button id="closeNotes">Close</button>
+    </dialog>
+    <div class="spacer"></div>
+    <footer>
+      <p>&copy; 2024 Chilldiary. All rights reserved.</p>
+  </footer>
+    <script type="module" src="./start-api-harjoituspohja.js"></script>
+  </body>
+</html>

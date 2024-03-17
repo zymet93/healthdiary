@@ -1,0 +1,21 @@
+Added login button and login dialogs.
+Implemented a function to format dates into EU format (formatdate).
+Modified JavaScript for entries button.
+Added JavaScript for saving entries (Save entry).
+Made frontend modifications:
+Rearranged boxes.
+Changed colors.
+Added background image.
+Added button links.
+Added diary logo image: Diary Logo.
+Implemented logout button.
+Added functionality to refresh diary after entry.
+Updated user information.
+Created a function for the about page, redirecting users to either the diary or login screen based on token presence.
+Continued frontend adjustments:
+Changed colors.
+Rearranged boxes.
+Modified text.
+Added final touches.
+Added functionality to the "get entries" button to retrieve entries when saving an entry.
+Implemented validation for forms.

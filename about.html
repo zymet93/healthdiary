@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
+    <title>About Chilldiary</title>
+</head>
+<body>
+    <ul>
+        <li><a onclick="checkLogin()">Home</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <header>
+        <h1>About Chilldiary</h1>
+    </header>
+    <main>
+        <section>
+            <p class="section-text">Chilldiary is your personal health journal designed to help you track your well-being and lifestyle habits. Whether you're aiming to lose weight, improve your mood, or simply keep a record of your daily activities, Chilldiary is here to support you on your journey to a healthier and happier life.</p>
+        </section>
+        <section>
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-text">At Chilldiary, our mission is to empower individuals to take control of their health and wellness by providing an intuitive platform for self-reflection and goal-setting. We believe that by fostering a supportive community and encouraging mindful living, we can inspire positive change and promote holistic well-being.</p>
+        </section>
+        <section>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-text">If you have any questions, feedback, or suggestions, we'd love to hear from you! Feel free to reach out to us at <a href="mailto:info@chilldiary.com">info@chilldiary.com</a>. Or visit us at 16th St & Church St</p>
+        </section>
+    </main>
+    
+    <!-- Embedded Google Maps -->
+    <section id="map" style="height: 450px">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.202001979265!2d-122.43126108505338!3d37.764881079762215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e4f7e8e2fc5%3A0x89a4fa0c06f98c38!2sChurch%20St%20%26%2016th%20St%2C%20San%20Francisco%2C%20CA%2094114%2C%20USA!5e0!3m2!1sen!2sfi!4v1647368567313!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chilldiary. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function checkLogin() {
+            const token = localStorage.getItem("token");
+            if (token) {
+                window.location.href = "start-api-harjoituspohja.html";
+            } else {
+                window.location.href = "index.html";
+            }
+        }
+        
+    </script>
+</body>
+</html>
