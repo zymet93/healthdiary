@@ -2,7 +2,7 @@ import "./style.css";
 import { fetchData } from "./fetch.js";
 
 async function getUserID() {
-  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/auth/me";
+  const url = "https://hyte-servuu.northeurope.cloudapp.azure.com/api/auth/me";
   const token = localStorage.getItem("token");
 
   const options = {
@@ -39,7 +39,7 @@ allButton.addEventListener("click", getEntries);
 async function getEntries() {
   console.log("Haetaan kaikki entriet");
 
-  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/entries";
+  const url = "https://hyte-servuu.northeurope.cloudapp.azure.com/api/entries";
   let tokeni = localStorage.getItem("token");
 
   const options = {
@@ -133,7 +133,7 @@ function deleteUser(evt) {
   const id2 = evt.target.parentElement.nextElementSibling.textContent;
   console.log("toinen tapa", id2);
 
-  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/entries/" + id;
+  const url = "https://hyte-servuu.northeurope.cloudapp.azure.com/api/entries/" + id;
   let tokeni = localStorage.getItem("token");
 
   const options = {
@@ -180,7 +180,7 @@ createDiary.addEventListener("click", async (evt) => {
   // Format the date to EU format (dd.mm.yyyy)
   const formattedDate = formatDate(entryDate);
 
-  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/entries";
+  const url = "https://hyte-servuu.northeurope.cloudapp.azure.com/api/entries";
   let tokeni = localStorage.getItem("token");
 
   const body = {
@@ -226,7 +226,7 @@ function formatDate(dateString) {
 
 async function showUserName() {
   console.log("Täällä ollaan!");
-  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/auth/me";
+  const url = "https://hyte-servuu.northeurope.cloudapp.azure.com/api/auth/me";
   let tokeni = localStorage.getItem("token");
 
   const options = {

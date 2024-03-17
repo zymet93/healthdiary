@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //   "password": "secret"
     //  }
 
-    const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/auth/login";
+    const url = "https://hyte-servuu.northeurope.cloudapp.azure.com/api/auth/login";
 
     const form = document.querySelector(".login_form");
 
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
   createUser.addEventListener("click", async (evt) => {
     evt.preventDefault();
     console.log("Nyt luodaan käyttäjä");
-    const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/users";
+    const url = "https://hyte-servuu.northeurope.cloudapp.azure.com/api/users";
 
     // # Create user
     // POST http://127.0.0.1:3000/api/users
