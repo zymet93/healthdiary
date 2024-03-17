@@ -2,7 +2,7 @@ import "./style.css";
 import { fetchData } from "./fetch.js";
 
 async function getUserID() {
-  const url = "http://localhost:3000/api/auth/me";
+  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/auth/me";
   const token = localStorage.getItem("token");
 
   const options = {
@@ -30,64 +30,16 @@ async function getUserID() {
   }
 }
 
-console.log("testiiiii", await getUserID());
 
-/*const bt1 = document.querySelector(".get_entry");
-bt1.addEventListener("click", async (event) => {
-  event.preventDefault();
 
-  console.log("klikki toimii");
 
-  const url = "http://localhost:3000/api/entries"; // Using the retrieved user ID
-
-  let tokeni = localStorage.getItem("token");
-
-  const options = {
-    method: "GET",
-    headers: {
-      Authorization: "Bearer: " + tokeni,
-    },
-  };
-
-  console.log(options);
-
-  fetchData(url, options)
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => {
-      console.error("Error fetching data:", error);
-    });
-}); */
-
-/*const allButton = document.querySelector(".get_users");
-allButton.addEventListener("click", getUsers);
-
-async function getUsers() {
-  console.log("Haetaan kaikki käyttäjät");
-
-  const url = "http://localhost:3000/api/users";
-  let tokeni = localStorage.getItem("token");
-
-  const options = {
-    method: "GET", // *GET, POST, PUT, DELETE, etc.
-    headers: {
-      Authorization: "Bearer: " + tokeni,
-    },
-  };
-  fetchData(url, options).then((data) => {
-    // käsitellään fetchData funktiosta tullut JSON
-    console.log(data);
-    // document.getElementById("name").innerHTML = data.user.username;
-  });
-} */
 const allButton = document.querySelector(".get_users");
 allButton.addEventListener("click", getEntries);
 
 async function getEntries() {
   console.log("Haetaan kaikki entriet");
 
-  const url = "http://localhost:3000/api/entries";
+  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/entries";
   let tokeni = localStorage.getItem("token");
 
   const options = {
@@ -181,7 +133,7 @@ function deleteUser(evt) {
   const id2 = evt.target.parentElement.nextElementSibling.textContent;
   console.log("toinen tapa", id2);
 
-  const url = "http://localhost:3000/api/entries/" + id;
+  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/entries/" + id;
   let tokeni = localStorage.getItem("token");
 
   const options = {
@@ -228,7 +180,7 @@ createDiary.addEventListener("click", async (evt) => {
   // Format the date to EU format (dd.mm.yyyy)
   const formattedDate = formatDate(entryDate);
 
-  const url = "http://127.0.0.1:3000/api/entries";
+  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/entries";
   let tokeni = localStorage.getItem("token");
 
   const body = {
@@ -274,7 +226,7 @@ function formatDate(dateString) {
 
 async function showUserName() {
   console.log("Täällä ollaan!");
-  const url = "http://localhost:3000/api/auth/me";
+  const url = "hyte-servuu.northeurope.cloudapp.azure.com/api/auth/me";
   let tokeni = localStorage.getItem("token");
 
   const options = {
