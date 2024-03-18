@@ -30,6 +30,7 @@ Feel free to explore the features and functionalities of Chilldiary using the te
 Chilldiary is your personal health companion, dedicated to helping you lead a healthier and happier life. Start tracking your journey to wellness today!
 ## Kuvakaappaukset
 
-![Käyttöliittymäkuvaus 1](kuvakaappaus1.png)
-![Käyttöliittymäkuvaus 2](kuvakaappaus2.png)
-![Käyttöliittymäkuvaus 3](kuvakaappaus3.png)
+![Käyttöliittymäkuvaus 1](img/sovellus1.jpg)
+![Käyttöliittymäkuvaus 2](img/sovellus2.jpg)
+![Käyttöliittymäkuvaus 3](img/sovellus3.jpg)
+
