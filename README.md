@@ -28,3 +28,8 @@ Feel free to explore the features and functionalities of Chilldiary using the te
 5. **Make Notes:** Use the notes section to jot down any upcoming events, training schedules, or other important information.
 
 Chilldiary is your personal health companion, dedicated to helping you lead a healthier and happier life. Start tracking your journey to wellness today!
+## Kuvakaappaukset
+
+![Käyttöliittymäkuvaus 1](kuvakaappaus1.png)
+![Käyttöliittymäkuvaus 2](kuvakaappaus2.png)
+![Käyttöliittymäkuvaus 3](kuvakaappaus3.png)
