@@ -1,3 +1,29 @@
+Database Description:
+The database consists of the following tables:
+
+Users: Contains user information such as username, password, email address, and user level.
+DiaryEntries: Contains diary entries, including sleep amount, mood, weight, notes, and entry date.
+// Not implemented// Medications: Contains medication-related information such as medication name, dosage, frequency, and duration.
+// NOT implemented // Exercises: Contains exercise-related information such as exercise type, duration, intensity, and performance date.
+
+Functionalities:
+Login: Users can log in by entering their username and password. After logging in, users can access their own health diaries.
+
+Health Diary Management: Users can record health-related information daily, such as sleep amount, weight, mood, medication, and exercise.
+
+Sleep Tracking: The application allows users to record their sleep hours daily to track the quality of their sleep and changes over time.
+
+Weight Tracking: Users can record their weight daily or at regular intervals to monitor weight fluctuations and achieve health and fitness goals.
+
+Mood Logging: The application enables users to record their mood daily to track mood variations and identify possible seasonal changes.
+
+//Not implemented // Medication Tracking: Users can record information about the medications they take, such as name, dosage, frequency, to help them remember to take their medication and monitor its effects.
+
+// Not implemented// Exercise Tracking: The application allows users to record exercise-related information, such as exercise type, duration, intensity, to track their workouts and progress.
+
+Notes: Users can make notes about upcoming events, feelings, or other significant matters, which helps them keep track of their daily events and thoughts.
+
+Logout: Users can log out of the application, preventing access to their data without logging in again.
 Added login button and login dialogs.
 Implemented a function to format dates into EU format (formatdate).
 Modified JavaScript for entries button.
@@ -19,3 +45,4 @@ Modified text.
 Added final touches.
 Added functionality to the "get entries" button to retrieve entries when saving an entry.
 Implemented validation for forms.
+implemented Notes button to see notes in dialog.
