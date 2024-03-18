@@ -30,7 +30,8 @@ Feel free to explore the features and functionalities of Chilldiary using the te
 Chilldiary is your personal health companion, dedicated to helping you lead a healthier and happier life. Start tracking your journey to wellness today!
 ## Screenshots
 
-[API Documentation](logs.txt)
+[API Documentation](https://github.com/zymet93/healthdiary/blob/main/logs.txt)
+
 
 ![Käyttöliittymäkuvaus 1](img/sovellus1.jpg)
 ![Käyttöliittymäkuvaus 2](img/sovellus2.jpg)
