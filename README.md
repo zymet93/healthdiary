@@ -28,9 +28,13 @@ Feel free to explore the features and functionalities of Chilldiary using the te
 5. **Make Notes:** Use the notes section to jot down any upcoming events, training schedules, or other important information.
 
 Chilldiary is your personal health companion, dedicated to helping you lead a healthier and happier life. Start tracking your journey to wellness today!
+
+## API DOC
+[API Documentation](https://github.com/zymet93/healthdiary/blob/main/logs.txt)
+
 ## Screenshots
 
-[API Documentation](https://github.com/zymet93/healthdiary/blob/main/logs.txt)
+
 
 
 ![Käyttöliittymäkuvaus 1](img/sovellus1.jpg)
